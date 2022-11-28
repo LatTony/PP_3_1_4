@@ -8,11 +8,9 @@ import java.util.Collection;
 public class Role {
 
     @Id
-    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "name")
     private String name;
 
     @ManyToMany(mappedBy = "roles")
