@@ -1,7 +1,6 @@
 package ru.kata.spring.boot_security.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,11 +17,12 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
-@Transactional
 public class UserServiceImp implements UserService, UserDetailsService {
 
     private final UserDao userDao;
+
     private final RoleService roleService;
+
     private final PasswordEncoder passwordEncoder;
 
     @Autowired

@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Set;
 
 @Service
-@Transactional
 public class RoleServiceImpl implements RoleService {
 
     private final RoleDAO roleDAO;

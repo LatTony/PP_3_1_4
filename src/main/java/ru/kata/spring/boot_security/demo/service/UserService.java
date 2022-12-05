@@ -8,6 +8,7 @@ import java.util.Collection;
 import java.util.List;
 
 public interface UserService {
+
     List<User> getUsers();
 
     void save(User user);
@@ -23,4 +24,5 @@ public interface UserService {
     void addDefaultUser();
 
     void updateUser(int id, User updatedUser);
+
 }
