@@ -17,6 +17,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 public class UserServiceImp implements UserService, UserDetailsService {
 
     private final UserDao userDao;
